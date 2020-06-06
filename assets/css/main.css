@@ -6,55 +6,7 @@
 	templated.co @templatedco
 	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
 */
-	
-#article{
-	height:px;
-	margin: 0 10%;
-}
-h3 ~ input[type=radio] {
-	margin: 10px 5px 10px 30px;
-	display:none;
-}
-input[type=radio]:checked+label{
-	font-weight: 1000;
-}
-#next{
-	margin-left: 70%;
-	margin-top: -60px; ;
-	display:none;
-	cursor: pointer;
-}
-.content {
-	width: 90%;
-	height: 90%;
-	position: relative;
-	left: 0%;
-	top: 0%;
-	box-shadow: 10px 10px grey;
-	background-color: white;
-	font-family: 'Nanum Gothic Coding', monospace;
-}
 
-.window {
-	height:90%;
-	padding: 5% 0 0 5%;
-	text-align: left;
-}
-
-.select {
-	text-align: center;
-	right: 50%;
-}
-
-#secondpoll{
-	display:none;
-	/* font-family: 'Nanum Myeongjo', serif; */
-	padding:15px;
-}
-#firstpoll{
-	/* font-family: 'Nanum Myeongjo', serif; */
-	padding:15px;
-}
 
 /* Reset */
 
