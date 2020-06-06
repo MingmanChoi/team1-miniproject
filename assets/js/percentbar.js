@@ -23,13 +23,13 @@ function move(){
 let photo = function(){
     let photolevel = document.querySelector("img");
     if (score>=75) {
-    photolevel.src = '/images/4.jpg'
+    photolevel.src = 'images/4.jpg'
     } else if(score>=50) {
-        photolevel.src = '/images/3.jpg'
+        photolevel.src = 'images/3.jpg'
     } else if(score>=25){
-        photolevel.src = '/images/2.jpg'
+        photolevel.src = 'images/2.jpg'
     } else {
-        photolevel.src = '/images/1.jpg'
+        photolevel.src = 'images/1.jpg'
     }
     photolevel.style.display = 'none';
     $('img').fadeIn(1000);
