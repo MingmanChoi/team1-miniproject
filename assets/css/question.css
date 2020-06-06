@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap');
+
+
+body {
+        margin: 0;
+        background-color: #f2e9e1;      
+    }
+
+
+    h1 {
+        font-size: 45px;
+        font-family: 'Nanum Myeongjo', serif;
+        text-align: center;
+        border-bottom: 3px solid white;
+        background-color: white;
+        margin: 0;
+        padding: 20px;
+    }
+
+
+    #grid {
+        display: grid;
+        grid-template-columns: 150px 1fr;
+    }
+
+    #grid ol {
+        padding-left:33px;
+    }
+
+    #article {
+        padding-left:25px;
+    }
+
+    h3 {
+        color: black;
+        font-size: 25px;
+        font-family: 'Nanum Myeongjo', serif;
+        margin-left: 0px;
+        margin-top: 17px;
+        margin-bottom: 3px;
+    }
+    input[type=checkbox] {
+        margin-left: 30px;
+    }
+
+    #next{
+        margin-left: 70%;
+        margin-top: -60px; ;
+  
+    }
+    .content {
+        width: 80%;
+        height: 70%;
+        position: absolute;
+        left: 10%;
+        right: 10%;
+        top: 20%;
+    }
+
+    .window {
+        box-shadow: 10px 10px grey;
+        height: 90%;
+        background-color: white;
+        text-align: left;
+    }
+    
+    .select {
+        text-align: center;
+        right: 50%;
+    }
+    
+    #secondpoll{
+        display:none;
+        font-family: 'Nanum Myeongjo', serif;
+        padding:15px;
+    }
+    #firstpoll{
+        font-family: 'Nanum Myeongjo', serif;
+        padding:15px;
+    }
+
+    #put{
+        width:20%;
+        margin-left: 70%;
+        margin-top: -95px; ;
+    }
+    

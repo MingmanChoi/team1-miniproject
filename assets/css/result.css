@@ -1,0 +1,44 @@
+#myProgress{
+    
+    position: relative;
+    width: 70%;
+    background-color: #ddd;
+    left : 15%
+}
+#myBar{
+    position: relative;
+    width:1%;
+    height: 30px;
+    background-color: #FF0066;
+    text-align: center;
+    color : white;
+
+}
+h1,h2,p{
+    text-align: center;
+}
+#advicebox{
+    position: relative;
+    left : 25%;
+    width: 50%;
+}
+img{
+    width: 50%;
+    left : 25%;
+    position: relative;
+}
+#score{
+    display: none;
+}
+h2{
+    font-family: 'East Sea Dokdo', cursive;
+    font-size:50px;
+}
+h1,h4{
+    font-family: 'Nanum Gothic', sans-serif;
+}
+body{
+    margin-top: 20px;
+    margin-bottom: 50px;
+    background-color: #f2e9e1;
+}

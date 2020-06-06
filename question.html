@@ -1,0 +1,101 @@
+<!doctype html>
+
+<html>
+
+<head>
+
+    <title> 연애하고시% </title>
+
+    <meta charset=“utf-8”>
+    <script src="http://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+        crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel='stylesheet' href='/assets/css/question.css'>
+</head>
+
+<body>
+    <h1><a href="question.html" id="title" src> <img src="/images/love.png" width="30%" height="30%"></a></h1>
+    <div id="put">
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="이름" aria-label="Recipient's username"
+                aria-describedby="button-addon2">
+            <div class="input-group-append">
+                <button class="btn btn-outline-secondary" type="button" id="button-addon2">Button</button>
+            </div>
+        </div>
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="성별" aria-label="Recipient's username"
+                aria-describedby="button-addon2">
+            <div class="input-group-append">
+                <button class="btn btn-outline-secondary" type="button" id="button-addon2">Button</button>
+            </div>
+        </div>
+    </div>
+    <div id="article">
+        <div class="content">
+            <div class="window">
+                <div id="firstpoll">
+                    <h3>1.그/그녀와 약속을 잡아 단둘이 만난 횟수는 총 몇번인가요?</h3>
+                    <input id="q1-1" type="radio" name="meet" value=0><label for="q1-1">0회</label></label>
+                    <input id="q1-2" type="radio" name="meet" value=3.75><label for="q1-2">1회</label>
+                    <input id="q1-3" type="radio" name="meet" value=7.5><label for="q1-3">2회</label>
+                    <input id="q1-4" type="radio" name="meet" value=11.25><label for="q1-4">3회</label>
+                    <input id="q1-5" type="radio" name="meet" value=18.75><label for="q1-5">4회 이상</label>
+                    <h3>2.그/그녀와 연락 주기가 어떻게 되나요?</h3>
+                    <input id="q2-1" type="radio" name="call" value=18.75><label for="q2-1">10분이내</label>
+                    <input id="q2-2" type="radio" name="call" value=11.25><label for="q2-2">10분초과</label>
+                    <input id="q2-3" type="radio" name="call" value=7.5><label for="q2-3">30분초과</label>
+                    <input id="q2-4" type="radio" name="call" value=3.75><label for="q2-4">1시간초과</label>
+                    <input id="q2-5" type="radio" name="call" value=0><label for="q2-5">3시간초과</label>
+                    <h3>3.그/그녀와의 스킨십 진도는?</h3>
+                    <input id="q3-1" type="radio" name="touch" value=0><label for="q3-1">선비</label>
+                    <input id="q3-2" type="radio" name="touch" value=3.75><label for="q3-2">손잡기</label>
+                    <input id="q3-3" type="radio" name="touch" value=7.5><label for="q3-3">손깍지</label>
+                    <input id="q3-4" type="radio" name="touch" value=11.25><label for="q3-4">포옹</label>
+                    <input id="q3-5" type="radio" name="touch" value=18.75><label for="q3-5">뽀뽀</label>
+                    <h3>4.당신은 데이트 비용의 몇%를 부담하시나요?</h3>
+                    <input id="q4-1" type="radio" name="cost" value=0><label for="q4-1">100%</label>
+                    <input id="q4-2" type="radio" name="cost" value=3.75><label for="q4-2">75%</label>
+                    <input id="q4-3" type="radio" name="cost" value=7.5><label for="q4-3">50%</label>
+                    <input id="q4-4" type="radio" name="cost" value=11.25><label for="q4-4">25%</label>
+                    <input id="q4-5" type="radio" name="cost" value=18.75><label for="q4-5">0%</label>
+                </div>
+                <div id="secondpoll">
+                    <h3>1.그/그녀와 본인의 친밀도는?</h3>
+                    <input id="q5-1" type="radio" name="closeness" value=1.25><label for="q5-1">전혀 안친함</label>
+                    <input id="q5-2" type="radio" name="closeness" value=1><label for="q5-2">조금 친함</label>
+                    <input id="q5-3" type="radio" name="closeness" value=0.75><label for="q5-3">보통</label>
+                    <input id="q5-4" type="radio" name="closeness" value=0.5><label for="q5-4">친해지는 중</label>
+                    <input id="q5-5" type="radio" name="closeness" value=0><label for="q5-5">매우 친함</label>
+                    <h3>2. 지금 그/그녀와 동일집단에 있나요?</h3>
+                    <input id="q6-1" type="radio" name="group" value=0><label for="q6-1">관련 없다</label>
+                    <input id="q6-2" type="radio" name="group" value=0.75><label for="q6-2">관련이 있다</label>
+                    <input id="q6-3" type="radio" name="group" value=1.25><label for="q6-3">매우 그렇다</label>
+                    <h3>3. 지금 그/그녀와의 사회적 관계는 ?</h3>
+                    <input id="q7-1" type="radio" name="social" value=0><label for="q7-1">친한 친구</label>
+                    <input id="q7-2" type="radio" name="social" value=0.5><label for="q7-2">지인</label>
+                    <input id="q7-3" type="radio" name="social" value=1><label for="q7-3">직장 동료</label>
+                    <input id="q7-4" type="radio" name="social" value=1.25><label for="q7-4">모르던 사이</label>
+                    <h3>4. 그/그녀의 성격은?</h3>
+                    <input id="q8-1" type="radio" name="personality" value=1.25><label for="q8-1">소극적</label>
+                    <input id="q8-2" type="radio" name="personality" value=0><label for="q8-2">적극적</label>
+                    <input id="q8-3" type="radio" name="personality" value=0.75><label for="q8-3">잘 모르겠다</label>
+                    <h3>5. 그/그녀와 친구들과 어울림 정도는 무엇인가?</h3>
+                    <input id="q9-1" type="radio" name="friend" value=0><label for="q9-1">인싸</label>
+                    <input id="q9-2" type="radio" name="friend" value=1.25><label for="q9-2">아싸</label>
+                </div>
+
+                <div>
+                    <img id="next" src="/images/next.png" width="20%" height="10%">
+                    <div class="select">
+                        <input id="onepoll" type="radio" name="select" checked>
+                        <input id="twopoll" type="radio" name="select">
+                    </div>
+                </div>
+                <script src="/assets/js/tab.js"></script>
+                <script src="/assets/js/score.js"></script>
+</body>
+
+</html>
