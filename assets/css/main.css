@@ -2894,6 +2894,10 @@
 			animation-duration: 5s;
 			animation-iteration-count: infinite;
 		}
+		.textani > h2 {
+			padding-top:15px;
+		}
+
 		.btn .btn-default{
 			border: 1px solid #ced4da !important;
 		}
@@ -2960,8 +2964,15 @@
 
 		@media screen and (max-width: 980px) {
 
-			#header {
+			#header #nav{
 				display: none;
+			}
+			#header h1{
+				left: 50% !important;
+				top: 2% !important;
+				font-size: 40px !important;
+				transform: translateX(-50%);
+				line-height: normal !important;
 			}
 
 		}
