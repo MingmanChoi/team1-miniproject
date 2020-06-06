@@ -1,3 +1,13 @@
+// 버튼 누를때 소리나게 하기
+var selectsound = document.querySelector('#selectsound');
+var nextsound = document.querySelector('#nextsound');
+document.querySelectorAll('input[type=radio]+label').forEach(function(t){
+    t.addEventListener('click',function(){
+        selectsound.play();
+    })
+})
+
+// 점수 계산
 document.querySelector('#next').onclick = function result(e) {
     e.preventDefault();
     let checkedNum = document.querySelectorAll('input[type=radio]:checked').length;
@@ -23,8 +33,11 @@ document.querySelector('#next').onclick = function result(e) {
 
         let answer = Number(result1) + Number(result2) + Number(result3) + Number(result4);
         
-        alert("당신의 연애 확률은"+answer+"% 입니다!")
-        location.href="result.html?"+answer;
+        nextsound.play();
+        // alert("당신의 연애 확률은"+answer+"% 입니다!")
+        setTimeout(() => {
+            location.href="result.html?"+answer;
+        }, 2000);
     }
 }
 

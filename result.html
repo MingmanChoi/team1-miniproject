@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <script src="http://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="//code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>결과 확인하기</title>
@@ -14,8 +16,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
     <link rel='stylesheet' href='/assets/css/result.css'>
 </head>
+
 <body>
-    
+
     <div id='myProgress'>
         <div id='myBar'></div>
     </div>
@@ -23,13 +26,19 @@
 
     <h1></h1>
     <br>
-<div id='score'>88</div>
-<img id=levelimg src='/images/3.jpg'>
-<h2>
-     당신을 위한 조언
- </h2>
-<div id='advicebox'><h3>advice</h3></div>
+    <img id=levelimg src=''>
+    <h2 id="advforu">
+        당신을 위한 조언
+    </h2>
+    <div id='advicebox'>
+        <h3></h3>
+    </div>
+    <button id="back2home" class="btn-lg" onclick="location.href='index.html'">다시하기</button>
+    <div id="sounds">
+        <audio id="resultsound" src="audio/ssum.mp3"></audio>
+    </div>
 
- <script type='text/javascript' src='/assets/js/percentbar.js'></script>
+    <script type='text/javascript' src='/assets/js/percentbar.js'></script>
 </body>
+
 </html>

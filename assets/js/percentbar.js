@@ -21,7 +21,6 @@ function move(){
 }
 
 let photo = function(){
-    score = Number(scores);
     let photolevel = document.querySelector("img");
     if (score>=75) {
     photolevel.src = '/images/4.jpg'
@@ -32,25 +31,33 @@ let photo = function(){
     } else {
         photolevel.src = '/images/1.jpg'
     }
+    photolevel.style.display = 'none';
+    $('img').fadeIn(1000);
 }
 
 let level = function(){
-    score = Number(scores);
     let adviceshown = document.querySelector("h1");
+    let resultsound = document.querySelector('#resultsound');
     if (score>=75) {
     adviceshown.innerHTML = "당신과 그분의 사이는 "+'<br>'+"4단계 '이미 연인' 단계입니다!"
+    resultsound.src = 'audio/congrat.mp3';
     } else if(score>=50) {
         adviceshown.innerHTML = "당신과 그분의 사이는"+'<br>'+" 3단계 '확실한 썸' 단계입니다!"
+        resultsound.src = 'audio/ssum.wav';
     } else if(score>=25){
         adviceshown.innerHTML = "당신과 그분의 사이는"+'<br>'+" 2단계 '호감' 단계입니다!"
+        resultsound.src = 'audio/hogam.wav';
     } else {
         adviceshown.innerHTML = "당신과 그분의 사이는 "+'<br>'+"1단계 '생판 남' 단계입니다!"
+        resultsound.src = 'audio/namnam.wav';
     }
+    resultsound.play();
+    adviceshown.style.display = 'none';
+    $('h1').fadeIn(1000)
 }
 
 
 let advice = function(){
-    score = Number(scores);
         let adviceshown = document.querySelector("h3");
     if (score>=75) { 
         adviceshown.innerHTML = "- 당신과 그분은 이미 연인 단계입니다. 눈치 싸움이 싫다면 화끈하게 먼저 고백하세요!"+'<br>'+'<br>'+"- 현재 연인이나 다름없는 관계를 이어오고 있는 당신. 누가 먼저 고백하더라도 답은 예스일겁니다!"+'<br>'+'<br>'+"- 강력 꿀팁! 고백을 할 때는 평소와는 다르게 멋지게 차려입고 데이트를 진행해보세요!"       
@@ -61,9 +68,23 @@ let advice = function(){
     } else {
         adviceshown.innerHTML = "- 당신과 그분은 생판 남입니다. 상대방과 마주쳤을 때, 웃으며 먼저 인사해보세요! "+'<br>'+'<br>'+"- 강력 꿀팁! 말을 걸기에 앞서, 상대방이 어떤 타입의 사람인지, 관심사가 무엇인지를 주변인에게 묻거나 SNS을 통해 파악해보세요"       
     }
+    adviceshown.style.display = 'none';
+    $('h3, #advforu').fadeIn(1000)
 }
 
-level();
-advice();
-move();
-photo();
+// level();
+// advice();
+// move();
+// photo();
+
+setTimeout(move, 0);
+setTimeout(level,2000);
+setTimeout(photo,2000);
+setTimeout(advice,4000);
+setTimeout(function(){
+    $('#back2home').fadeIn(500);
+    setInterval(() => {
+        $('#back2home').effect("shake",{times:1,distance:5},300);
+    }, 3000);
+},6000)
+

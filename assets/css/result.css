@@ -1,44 +1,79 @@
-#myProgress{
-    
+#myProgress {
+
     position: relative;
     width: 70%;
     background-color: #ddd;
-    left : 15%
+    left: 15%
 }
-#myBar{
+
+#myBar {
     position: relative;
-    width:1%;
+    width: 1%;
     height: 30px;
     background-color: #FF0066;
     text-align: center;
-    color : white;
+    color: white;
 
 }
-h1,h2,p{
+
+h1,
+h2,
+p {
     text-align: center;
 }
-#advicebox{
+
+#advicebox {
     position: relative;
-    left : 25%;
+    left: 25%;
     width: 50%;
 }
-img{
+
+img {
     width: 50%;
-    left : 25%;
+    left: 25%;
     position: relative;
 }
-#score{
+
+#score {
     display: none;
 }
-h2{
+
+h2 {
     font-family: 'East Sea Dokdo', cursive;
-    font-size:50px;
+    font-size: 50px;
 }
-h1,h4{
+
+h1,
+h4 {
     font-family: 'Nanum Gothic', sans-serif;
 }
-body{
+
+body {
     margin-top: 20px;
     margin-bottom: 50px;
     background-color: #f2e9e1;
+}
+
+#advforu {
+    display: none;
+}
+
+#back2home {
+    position: fixed;
+    display : none; 
+    right: 10%;
+    bottom: 15%;
+    border-radius: 5px;
+    border: 1px solid white;
+    background-color: #FF0066;
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+    box-shadow: 2px 2px gray;
+    padding:10px;
+}
+
+#back2home:hover {
+    color: #FF0066;
+    background-color: whitesmoke;
 }

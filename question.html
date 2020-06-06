@@ -10,28 +10,28 @@
     <script src="http://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
         crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&family=Nanum+Gothic+Coding&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel='stylesheet' href='/assets/css/question.css'>
 </head>
 
 <body>
-    <h1><a href="question.html" id="title" src> <img src="/images/love.png" width="30%" height="30%"></a></h1>
+    <h1>
+        <a href="question.html" id="title" src> <img src="/images/love.png" width="30%" height="30%"></a>
+    </h1>
     <div id="put">
         <div class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="이름" aria-label="Recipient's username"
+            <input type="text" class="form-control" placeholder="이름을 입력해주세요" aria-label="Recipient's username"
                 aria-describedby="button-addon2">
-            <div class="input-group-append">
-                <button class="btn btn-outline-secondary" type="button" id="button-addon2">Button</button>
-            </div>
         </div>
-        <div class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="성별" aria-label="Recipient's username"
-                aria-describedby="button-addon2">
-            <div class="input-group-append">
-                <button class="btn btn-outline-secondary" type="button" id="button-addon2">Button</button>
-            </div>
-        </div>
+    </div>
+    <div id="home" class="fa fa-home fa-lg" aria-hidden="true">Home</div>
+    <div id="sounds">
+        <audio autoplay controls loop id="bgmsound" src="audio/brightbgm.mp3"></audio>
+        <audio id="selectsound" src="audio/waterdrop.wav"></audio>
+        <audio id="nextsound" src="audio/next.wav"></audio>
+
     </div>
     <div id="article">
         <div class="content">
@@ -89,13 +89,17 @@
 
                 <div>
                     <img id="next" src="/images/next.png" width="20%" height="10%">
-                    <div class="select">
-                        <input id="onepoll" type="radio" name="select" checked>
-                        <input id="twopoll" type="radio" name="select">
-                    </div>
                 </div>
-                <script src="/assets/js/tab.js"></script>
-                <script src="/assets/js/score.js"></script>
+            </div>
+            <div class="select">
+                <input id="onepoll" type="radio" name="select" checked><label for="onepoll"></label>
+                <input id="twopoll" type="radio" name="select"><label for="twopoll"></label>
+            </div>
+        </div>
+    </div>
+
+    <script src="/assets/js/tab.js"></script>
+    <script src="/assets/js/score.js"></script>
 </body>
 
 </html>
