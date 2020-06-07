@@ -31,11 +31,10 @@
         </div>
     </div>
     <div id="home" class="fa fa-home fa-lg" aria-hidden="true">Home</div>
-    <div id="sounds">
-        <audio autoplay controls loop id="bgmsound" src="audio/brightbgm.mp3"></audio>
-        <audio id="selectsound" src="audio/waterdrop.wav"></audio>
-        <audio id="nextsound" src="audio/next.wav"></audio>
-
+    <div id="musicbtns">
+        <h3 style="display:inline;">Music :</h3>
+        <i id="playpause" class="fa fa-2x fa-pause-circle" aria-hidden="true"></i>
+        <i id="stopm" class="fa fa-2x fa-stop-circle" aria-hidden="true"></i>
     </div>
     <div id="article">
         <div class="content">
@@ -101,7 +100,12 @@
             </div>
         </div>
     </div>
+    <div id="sounds">
+        <audio autoplay loop id="bgmsound" src="audio/brightbgm.mp3"></audio>
+        <audio id="selectsound" src="audio/waterdrop.wav"></audio>
+        <audio id="nextsound" src="audio/next.wav"></audio>
 
+    </div>
     <script src="assets/js/tab.js"></script>
     <script src="assets/js/score.js"></script>
 </body>

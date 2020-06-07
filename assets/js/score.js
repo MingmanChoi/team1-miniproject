@@ -7,6 +7,27 @@ document.querySelectorAll('input[type=radio]+label').forEach(function(t){
     })
 })
 
+// 음악 버튼
+var bgmsound = document.querySelector('#bgmsound');
+var playpause = document.querySelector('#playpause');
+var stopm = document.querySelector('#stopm');
+var i=0;
+playpause.addEventListener('click',function(){
+    playpause.classList.toggle('fa-play-circle');
+    playpause.classList.toggle('fa-pause-circle');
+    if(i===0) {
+        bgmsound.pause();
+        i++;
+    }
+    else{
+        bgmsound.play();        
+        i = 0;
+    }
+})
+stopm.addEventListener('click',function(){
+    bgmsound.pause();
+    bgmsound.currentTime = 0;
+})
 // 점수 계산
 document.querySelector('#next').onclick = function result(e) {
     e.preventDefault();

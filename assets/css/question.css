@@ -55,9 +55,8 @@ body {
     .content {
         width: 80%;
         height: 70%;
-        position: absolute;
-        left: 10%;
-        top: 21%;
+        position: static;
+        margin : 0 0 5% 10%;
         box-shadow: 10px 10px grey;
         background-color: white;
         font-family: 'Nanum Gothic Coding', monospace;
@@ -71,7 +70,8 @@ body {
     
     .select {
         text-align: center;
-        right: 50%;
+        position: relative;
+        height: 50px;
     }
     
     #secondpoll{
@@ -101,6 +101,14 @@ body {
     #sounds{
         position: absolute;
         left:10px;
+    }
+
+    #musicbtns{
+        margin:5px 13%;
+    }
+    #musicbtns i:hover{
+        color:#FE0E6F;
+        cursor: pointer;
     }
     
     input[type="checkbox"],
